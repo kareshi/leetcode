@@ -1,21 +1,17 @@
 package singlenumber;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Solution {
 
     public int singleNumber(int[] nums) {
-        List<Integer> candidates = new ArrayList<Integer>();
-        for (int i=0; i<nums.length; i++) {
-            int indexOfBrother = candidates.indexOf(nums[i]);
-            if(indexOfBrother > -1) {
-                candidates.remove(indexOfBrother);
-            } else {
-                candidates.add(nums[i]);
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length - 1; i=i+2) {
+            if(nums[i] != nums[i+1]) {
+                return nums[i];
             }
         }
-        return candidates.get(0);
+        return nums[nums.length -1];
     }
 
 }
