@@ -1,4 +1,4 @@
-package removedeplicates;
+package easy.array.removedeplicates;
 
 public class Solution {
     public int removeDuplicates(int[] nums) {

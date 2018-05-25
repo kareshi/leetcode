@@ -1,4 +1,4 @@
-package besttimetobuy2;
+package easy.array.besttimetobuy2;
 
 public class Solution {
     public int maxProfit(int[] prices) {

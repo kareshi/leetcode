@@ -1,4 +1,4 @@
-package containsduplicate;
+package easy.array.containsduplicate;
 
 import java.util.Arrays;
 

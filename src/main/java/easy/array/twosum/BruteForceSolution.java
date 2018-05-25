@@ -1,4 +1,4 @@
-package twosum;
+package easy.array.twosum;
 
 public class BruteForceSolution {
     public int[] twoSum(int[] nums, int target) {

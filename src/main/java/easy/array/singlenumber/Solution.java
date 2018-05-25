@@ -1,4 +1,4 @@
-package singlenumber;
+package easy.array.singlenumber;
 
 import java.util.Arrays;
 
