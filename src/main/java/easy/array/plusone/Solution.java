@@ -6,15 +6,16 @@ public class Solution {
         int value;
         do {
             value = digits[i];
-            digits[i] = (digits[i] + 1) % 10 ;
-            i--;
-        } while(i >= 0 && value == 9);
-
-        if(digits[0] == 0) {
-            int[] result = new int[digits.length+1];
-            result[0] = 1;
-            return result;
-        }
-        return digits;
+            if(value < 9) {
+                digits[i]++;
+                return digits;
+            } else {
+                digits[i] = 0;
+                i--;
+            }
+        } while(i >= 0);
+        int[] result = new int[digits.length+1];
+        result[0] = 1;
+        return result;
     }
 }
